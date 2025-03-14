@@ -9,16 +9,23 @@
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
   "main": "./dist/extension.js",
   "contributes": {
-    "commands": [
-      {
-        "command": "oraclejet-intellisense.helloWorld",
-        "title": "Hello World"
+    "configuration": {
+      "title": "OJET Utility Classes Autocomplete",
+      "properties": {
+        "ojetUtilityAutocomplete.enableHover": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable documentation on hover over OJET utility classes"
+        }
       }
-    ]
+    }
   },
+  "files": [
+    "out/**/*",
+    "utility-ojet.json"
+  ],
   "scripts": {
     "vscode:prepublish": "npm run package",
     "compile": "webpack",
@@ -30,6 +37,11 @@
     "lint": "eslint src",
     "test": "vscode-test"
   },
+  "activationEvents": [
+    "onLanguage:html",
+    "onLanguage:javascript",
+    "onLanguage:typescript"
+  ],
   "devDependencies": {
     "@types/vscode": "^1.98.0",
     "@types/mocha": "^10.0.10",
