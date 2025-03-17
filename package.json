@@ -20,7 +20,13 @@
           "description": "Enable documentation on hover over OJET utility classes"
         }
       }
-    }
+    },
+    "commands": [
+      {
+        "command": "oraclejet-intellisense.forceActivation",
+        "title": "Oracle JET: Force IntelliSense Activation"
+      }
+    ]
   },
   "files": [
     "out/**/*",
@@ -40,7 +46,10 @@
   "activationEvents": [
     "onLanguage:html",
     "onLanguage:javascript",
-    "onLanguage:typescript"
+    "onLanguage:typescript",
+    "onLanguage:javascriptreact", 
+    "onLanguage:typescriptreact",
+    "onCommand:oraclejet-intellisense.forceActivation"
   ],
   "devDependencies": {
     "@types/vscode": "^1.98.0",

@@ -1,71 +1,48 @@
-# oraclejet-intellisense README
+# OJET Utility Classes IntelliSense
 
-This is the README for your extension "oraclejet-intellisense". After writing up a brief description, we recommend including the following sections.
+## 🚀 Overview
+OJET Utility Classes IntelliSense is a **VS Code extension** that provides **autocompletion** and **hover documentation** for Oracle JET (OJET) utility classes in your projects.
 
-## Features
+## ✨ Features
+- **Autocomplete support** for OJET utility classes in **HTML, JavaScript, TypeScript, JSX, and TSX** files.
+- **Hover documentation** to display information about OJET utility classes.
+- **Automatic activation** within Oracle JET projects.
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+## 🔥 Requirements
+This extension is only activated in projects that contain an **oraclejetconfig.json** file at the **workspace root**.
 
-For example if there is an image subfolder under your extension project workspace:
+## 📌 Installation
+1. Install the extension from the **VS Code Marketplace**.
+2. Ensure your project includes an **oraclejetconfig.json** file.
+3. Start coding and enjoy **OJET IntelliSense**!
 
-\!\[feature X\]\(images/feature-x.png\)
+## 🛠️ Usage
+- Start typing `oj-` inside **class attributes** to trigger autocompletion.
+- Hover over an **OJET utility class** to view documentation.
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+## ⚡ Supported File Types
+- `.html`
+- `.js` / `.ts`
+- `.jsx` / `.tsx`
 
-## Requirements
+## 🔧 Configuration
+This extension does not require additional configuration. However, if needed, future settings can be added.
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+## 🛠️ Troubleshooting
+- If autocompletion **is not working**, ensure that:
+  - The **oraclejetconfig.json** file exists in your project's root.
+  - The file you are editing is one of the **supported file types**.
 
-## Extension Settings
+## 📄 License
+This extension is released under the **MIT License**.
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+## 🤝 Contributing
+Contributions are welcome! Feel free to **submit issues or pull requests** on GitHub.
 
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
+## 💡 Feedback
+If you find this extension useful, **please leave a review** on the VS Code Marketplace!
 
 ---
 
-## Following extension guidelines
+**Enjoy coding with Oracle JET and IntelliSense support! 🚀**
 
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
