@@ -1,7 +1,7 @@
 # OJET Utility Classes IntelliSense
 
 ## 🚀 Overview
-OJET Utility Classes IntelliSense is a **VS Code extension** that provides **autocompletion** and **hover documentation** for Oracle JET (OJET) utility classes in your projects.
+OJET Utility Classes IntelliSense is a **VS Code extension** that provides **autocompletion** for Oracle JET (OJET) utility classes in your projects.
 
 ## ✨ Features
 - **Autocomplete support** for OJET utility classes in **HTML, JavaScript, TypeScript, JSX, and TSX** files.
