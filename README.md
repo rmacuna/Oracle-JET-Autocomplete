@@ -5,7 +5,7 @@ OJET Utility Classes Autocomplete is a **VS Code extension** that provides **aut
 
 <!-- Reference an image of the extension -->
 <p align="center">
-  <img src="demo.gif" alt="OJET Utility Classes Autocomplete Demo" width="700">
+  <img src="images/demo.gif" alt="OJET Utility Classes Autocomplete Demo" width="700">
 </p>
 
 ## ✨ Features
