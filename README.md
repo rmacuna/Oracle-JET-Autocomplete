@@ -1,7 +1,12 @@
-# OJET Utility Classes IntelliSense
+# OJET Utility Classes Autocomplete
 
 ## 🚀 Overview
-OJET Utility Classes IntelliSense is a **VS Code extension** that provides **autocompletion** for Oracle JET (OJET) utility classes in your projects.
+OJET Utility Classes Autocomplete is a **VS Code extension** that provides **autocompletion** for Oracle JET (OJET) utility classes in your projects.
+
+<!-- Reference an image of the extension -->
+<p align="center">
+  <img src="demo.gif" alt="OJET Utility Classes Autocomplete Demo" width="700">
+</p>
 
 ## ✨ Features
 - **Autocomplete support** for OJET utility classes in **HTML, JavaScript, TypeScript, JSX, and TSX** files.
@@ -14,7 +19,7 @@ This extension is only activated in projects that contain an **oraclejetconfig.j
 ## 📌 Installation
 1. Install the extension from the **VS Code Marketplace**.
 2. Ensure your project includes an **oraclejetconfig.json** file.
-3. Start coding and enjoy **OJET IntelliSense**!
+3. Start coding and enjoy **OJET Autocomplete**!
 
 ## 🛠️ Usage
 - Start typing `oj-` inside **class attributes** to trigger autocompletion.
@@ -44,5 +49,5 @@ If you find this extension useful, **please leave a review** on the VS Code Mark
 
 ---
 
-**Enjoy coding with Oracle JET and IntelliSense support! 🚀**
+**Enjoy coding with Oracle JET and Autocomplete support! 🚀**
 

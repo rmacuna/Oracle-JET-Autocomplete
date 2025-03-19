@@ -1,9 +1,10 @@
 {
-  "name": "oraclejet-intellisense",
-  "displayName": "OracleJET IntelliSense",
-  "description": "Oracle Jet Utility Classes IntelliSense that enhances the OJET development experience by providing autocomplete to the oracle utility classes",
+  "name": "oraclejet-autocomplete",
+  "displayName": "OracleJET Autocomplete",
+  "description": "Provides autocompletion for OracleJET utility classes",
   "version": "0.0.1",
   "publisher": "rmacuna99",
+  "icon": "icon.png",
   "engines": {
     "vscode": "^1.98.0"
   },
@@ -12,6 +13,10 @@
     "Other"
   ],
   "main": "./dist/extension.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rmacuna/Oracle-JET-Autocomplete"
+  },
   "contributes": {
     "configuration": {
       "title": "OJET Utility Classes Autocomplete",
@@ -25,15 +30,11 @@
     },
     "commands": [
       {
-        "command": "oraclejet-intellisense.activate",
-        "title": "Oracle JET: Activate IntelliSense"
+        "command": "oraclejet-autocomplete.activate",
+        "title": "Oracle JET: Activate Autocompletions"
       }
     ]
   },
-  "files": [
-    "out/**/*",
-    "utility-ojet.json"
-  ],
   "scripts": {
     "vscode:prepublish": "npm run package",
     "compile": "webpack",

@@ -18,7 +18,7 @@ export async function activate(context: vscode.ExtensionContext) {
 
   vscode.commands.executeCommand(
     "setContext",
-    "oraclejet-intellisense.active",
+    "oraclejet-autocomplete.active",
     true
   );
 
@@ -27,9 +27,9 @@ export async function activate(context: vscode.ExtensionContext) {
 
   // Register the activation command
   const activateCommand = vscode.commands.registerCommand(
-    "oraclejet-intellisense.activate",
+    "oraclejet-autocomplete.activate",
     () => {
-      vscode.window.showInformationMessage("Oracle JET IntelliSense activated");
+      vscode.window.showInformationMessage("Oracle JET Autocomplete activated");
     }
   );
 
@@ -42,7 +42,7 @@ export async function activate(context: vscode.ExtensionContext) {
 vscode.workspace.onDidChangeConfiguration((event) => {
   if (event.affectsConfiguration("ojetUtilityAutocomplete.enableHover")) {
     vscode.window.showInformationMessage(
-      "Oracle JET IntelliSense settings updated."
+      "Oracle JET Autocomplete settings updated."
     );
   }
 });
@@ -50,7 +50,7 @@ vscode.workspace.onDidChangeConfiguration((event) => {
 export function deactivate() {
   vscode.commands.executeCommand(
     "setContext",
-    "oraclejet-intellisense.active",
+    "oraclejet-autocomplete.active",
     false
   );
 }
