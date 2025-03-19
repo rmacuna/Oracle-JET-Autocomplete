@@ -16,25 +16,34 @@ export async function activate(context: vscode.ExtensionContext) {
     return;
   }
 
-	// vscode.commands.executeCommand(
-  //   "setContext",
-  //   "oraclejet-intellisense.active",
-  //   true
-  // );
+  vscode.commands.executeCommand(
+    "setContext",
+    "oraclejet-intellisense.active",
+    true
+  );
 
   const ojetUtilityClasses = await loadUtilityClasses(context);
   const classLookup = createClassLookup(ojetUtilityClasses);
 
-	context.subscriptions.push(createCompletionProvider(classLookup));
+  // Register the activation command
+  const activateCommand = vscode.commands.registerCommand(
+    "oraclejet-intellisense.activate",
+    () => {
+      vscode.window.showInformationMessage("Oracle JET IntelliSense activated");
+    }
+  );
+
+  context.subscriptions.push(
+    createCompletionProvider(classLookup),
+    activateCommand
+  );
 }
 
-
 vscode.workspace.onDidChangeConfiguration((event) => {
-  if (event.affectsConfiguration("myExtension.enableFeature")) {
+  if (event.affectsConfiguration("ojetUtilityAutocomplete.enableHover")) {
     vscode.window.showInformationMessage(
       "Oracle JET IntelliSense settings updated."
     );
-    // Reload settings dynamically
   }
 });
 

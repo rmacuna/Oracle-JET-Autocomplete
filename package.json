@@ -3,10 +3,12 @@
   "displayName": "OracleJET IntelliSense",
   "description": "Oracle Jet Utility Classes IntelliSense that enhances the OJET development experience by providing autocomplete to the oracle utility classes",
   "version": "0.0.1",
+  "publisher": "rmacuna99",
   "engines": {
     "vscode": "^1.98.0"
   },
   "categories": [
+    "Linters",
     "Other"
   ],
   "main": "./dist/extension.js",
@@ -23,8 +25,8 @@
     },
     "commands": [
       {
-        "command": "oraclejet-intellisense.forceActivation",
-        "title": "Oracle JET: Force IntelliSense Activation"
+        "command": "oraclejet-intellisense.activate",
+        "title": "Oracle JET: Activate IntelliSense"
       }
     ]
   },
@@ -48,8 +50,7 @@
     "onLanguage:javascript",
     "onLanguage:typescript",
     "onLanguage:javascriptreact", 
-    "onLanguage:typescriptreact",
-    "onCommand:oraclejet-intellisense.forceActivation"
+    "onLanguage:typescriptreact"
   ],
   "devDependencies": {
     "@types/vscode": "^1.98.0",
