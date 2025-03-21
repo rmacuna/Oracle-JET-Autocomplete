@@ -1,4 +1,4 @@
-# OJET Utility Classes Autocomplete  
+# Oracle JET Utility Classes Autocomplete  
 
 ## 🚀 Overview  
 OJET Utility Classes Autocomplete is a **VS Code extension** that provides **autocompletion** for Oracle JET (OJET) utility classes in your projects.  

@@ -1,8 +1,8 @@
 {
   "name": "oraclejet-autocomplete",
-  "displayName": "OracleJET Autocomplete",
-  "description": "Provides autocompletion for OracleJET utility classes",
-  "version": "0.0.1",
+  "displayName": "Oracle JET Autocomplete",
+  "description": "Provides autocompletion for Oracle JET utility classes",
+  "version": "0.0.2",
   "publisher": "rmacuna99",
   "icon": "icon.png",
   "engines": {
